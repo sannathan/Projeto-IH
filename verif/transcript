@@ -164,3 +164,5 @@ do runtb_top
 # ** Note: $stop    : ./tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at ./tb_top.sv line 43
+# End time: 20:21:57 on Jul 17,2024, Elapsed time: 0:13:12
+# Errors: 0, Warnings: 5
