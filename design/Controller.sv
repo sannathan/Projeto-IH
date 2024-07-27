@@ -23,7 +23,7 @@ module Controller (
 
   assign R_TYPE = 7'b0110011;  //add,and, sub, slt, xor, or
   assign B_TYPE = 7'b1100011; //beq, bne, blt, bge
-  assign I_TYPE = 7'0010011; //slti, addi, slli, srli, srai obs: vai precisar fazer calculo de deslocamento quando for usar
+  assign I_TYPE = 7'b0010011; //slti, addi, slli, srli, srai obs: vai precisar fazer calculo de deslocamento quando for usar
   assign S_TYPE = 7'b0100011; // sw, sb, sh
   assign LOAD_TYPE = 7'b0000011; //lw, lb, lh, lbu 
   assign JAL = 7'b1101111; // jal
