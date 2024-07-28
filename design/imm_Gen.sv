@@ -8,6 +8,16 @@ module imm_Gen (
 
   always_comb
     case (inst_code[6:0])
+      7'b0010011:
+	      case (inst_code[14:12])
+          3'b101: // SRAI , SRLI
+            Imm_out = inst_code[24:20];
+          3'b001: // SLLI
+            Imm_out = inst_code[24:20];
+          default: // ANDI, ORI, XORI, ADDI, SLTI 
+            Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
+
+        endcase
       7'b0000011:  /*I-type load part*/
       Imm_out = {inst_code[31] ? 20'hFFFFF : 20'b0, inst_code[31:20]};
 
@@ -23,6 +33,20 @@ module imm_Gen (
         inst_code[11:8],
         1'b0
       };
+      7'b1101111: /*JAL*/
+        ImmOut = {
+          Instruction[31] ? 11'h7FF : 11'b0,
+          Instruction[31],
+          Instruction[19:12],
+          Instruction[20],
+          Instruction[30:21],
+          1'b0
+        };
+        7'b1100111: /*JALR*/
+          ImmOut = {
+            Instruction[31] ? 20'hFFFFF : 20'b0,
+            Instruction[31:20]
+          };
 
       default: Imm_out = {32'b0};
 
