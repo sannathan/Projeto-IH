@@ -28,7 +28,7 @@ module datamemory #(
       .Wr(Wr)
   );
 
-  always_ff @(*) begin
+  always_comb begin
     raddress = {{22{1'b0}}, a};
     waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
     Datain = wd;

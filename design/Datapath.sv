@@ -262,14 +262,17 @@ module Datapath #(
   end
 
   // // // // Data memory 
-  datamemory data_mem (
-      clk,
-      C.MemRead,
-      C.MemWrite,
-      C.Alu_Result[8:0],
-      C.RD_Two,
-      C.func3,
-      ReadData
+  datamemory #(
+    .DM_ADDRESS(DM_ADDRESS),
+    .DATA_W(DATA_W)
+  )data_mem (
+      .clk(clk),
+      .MemRead(C.MemRead),
+      .MemWrite(C.MemWrite),
+      .a(C.Alu_Result[8:0]),
+      .wd(C.RD_Two),
+      .Funct3(C.func3),
+      .rd(ReadData)
   );
 
   assign wr = C.MemWrite;
