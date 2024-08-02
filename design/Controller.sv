@@ -37,7 +37,7 @@ module Controller (
   assign MemRead = (Opcode == LOAD_TYPE);
   assign MemWrite = (Opcode == S_TYPE);
   assign ALUOp[0] = (Opcode == B_TYPE);
-  assign ALUOp[1] = (Opcode == R_TYPE);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE);
   assign Branch = (Opcode == B_TYPE);
   
 endmodule
