@@ -320,7 +320,7 @@ module Datapath #(
     end
   end
 
-  logic [DATA_W-1:0] Jmux_WrmuxSrc;
+  //logic [DATA_W-1:0] Jmux_WrmuxSrc;
 
   //--// The LAST Block
   mux2 #(32) resmux (
@@ -330,13 +330,13 @@ module Datapath #(
       WrmuxSrc
   );
 
-   mux2 #(32) Jmux (
+   /*mux2 #(32) Jmux (
     temp,
     D.Pc_Four,
     D.Jump,
     Jmux_WrmuxSrc
-  );
+  );*/
 
-  assign WB_Data = Jmux_WrmuxSrc;
+  assign WB_Data = WrmuxSrc;
 
 endmodule

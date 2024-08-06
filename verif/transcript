@@ -1,41 +1,7 @@
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:25:57 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# ** Error: (vlog-13069) ./../design/Datapath.sv(163): near "<": syntax error, unexpected '<'.
-# ** Error: (vlog-13069) ./../design/Datapath.sv(237): near "ALUResult": syntax error, unexpected IDENTIFIER, expecting ')'.
-# ** Error: (vlog-13069) ./../design/Datapath.sv(264): near "C": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 13:25:58 on Aug 06,2024, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runtb_top line 4
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -f compile_verilog"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:29:59 on Aug 06,2024
+# Start time: 16:43:39 on Aug 06,2024
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -64,10 +30,10 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 13:29:59 on Aug 06,2024, Elapsed time: 0:00:00
+# End time: 16:43:39 on Aug 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 13:29:59 on Aug 06,2024
+# Start time: 16:43:39 on Aug 06,2024
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -98,150 +64,9 @@ do runtb_top
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: natha  Hostname: DESKTOP-G5Q8GLO  ProcessID: 17468
-#           Attempting to use alternate WLF file "./wlft00hetm".
+#           Attempting to use alternate WLF file "./wlft2bj5xh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft00hetm
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-#                   45: Register [ 7] written with value: [00000001] | [         1]
-# 
-#                   55: Register [ 2] written with value: [00000004] | [         4]
-# 
-#                   65: Register [ 4] written with value: [00000004] | [         4]
-# 
-#                   85: Register [ 6] written with value: [00000004] | [         4]
-# 
-# ** Note: $stop    : ./tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at ./tb_top.sv line 43
-DO RUntb_top
-# invalid command name "DO"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib.qdb".
-# Error 133: Unable to remove directory "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:32:18 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 13:32:18 on Aug 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 13:32:19 on Aug 06,2024, Elapsed time: 0:02:20
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 13:32:20 on Aug 06,2024
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: natha  Hostname: DESKTOP-G5Q8GLO  ProcessID: 17468
-#           Attempting to use alternate WLF file "./wlftr5yt79".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftr5yt79
+#           Using alternate file: ./wlft2bj5xh
 # hexadecimal
 # unsigned
 # hexadecimal
@@ -305,319 +130,25 @@ do runtb_top
 # 
 #                   65: Register [ 4] written with value: [00000004] | [         4]
 # 
-#                   65: Memory [  1] read with value: [00000000] | [         0]
+#                   65: Memory [  1] read with value: [ffffffff] | [4294967295]
 # 
-#                   70: Memory [  1] read with value: [00000002] | [         2]
+#                   70: Memory [  1] read with value: [ffffff8f] | [4294967183]
 # 
-#                   75: Register [ 6] written with value: [00000002] | [         2]
+#                   75: Register [ 6] written with value: [ffffff8f] | [4294967183]
 # 
 #                   85: Register [ 6] written with value: [00000004] | [         4]
 # 
-#                   85: Memory [  4] read with value: [00000002] | [         2]
+#                   85: Memory [  4] read with value: [ffffff8f] | [4294967183]
 # 
-#                   85: Memory [  4] read with value: [00000000] | [         0]
+#                   85: Memory [  4] read with value: [ffffffff] | [4294967295]
 # 
-#                   95: Register [ 7] written with value: [00000000] | [         0]
+#                   95: Register [ 7] written with value: [ffffffff] | [4294967295]
 # 
-#                  105: Register [ 8] written with value: [00000000] | [         0]
+#                   95: Memory [  4] read with value: [000000ff] | [       255]
 # 
-#                  115: Register [ 9] written with value: [00000000] | [         0]
+#                  105: Register [ 8] written with value: [000000ff] | [       255]
 # 
-# ** Note: $stop    : ./tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at ./tb_top.sv line 43
-# WARNING: No extended dataflow license exists
-DO RUNtb_top
-# invalid command name "DO"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qpg".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qtl".
-# Error 133: Unable to remove directory "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:42:21 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# ** Error: (vlog-13069) ./../design/Datapath.sv(163): near "<": syntax error, unexpected '<'.
-# ** Error: (vlog-13069) ./../design/Datapath.sv(237): near "ALUResult": syntax error, unexpected IDENTIFIER, expecting ')'.
-# ** Error: (vlog-13069) ./../design/Datapath.sv(264): near "C": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 10:42:22 on Aug 06,2024, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runtb_top line 4
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -f compile_verilog"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qpg".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qtl".
-# Error 133: Unable to remove directory "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:34 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# ** Error (suppressible): (vlog-13276) ./../design/Datapath.sv(149): Could not find field/method name (Halt) in 'B' of 'B.Halt'.
-# ** Error (suppressible): (vlog-13276) ./../design/Datapath.sv(142): Could not find field/method name (Jump) in 'B' of 'B.Jump'.
-# ** Error (suppressible): (vlog-13276) ./../design/Datapath.sv(150): Could not find field/method name (JumpReg) in 'B' of 'B.JumpReg'.
-# ** Error (suppressible): (vlog-13276) ./../design/Datapath.sv(301): Could not find field/method name (Jump) in 'D' of 'D.Jump'.
-# ** Error (suppressible): (vlog-13276) ./../design/Datapath.sv(249): Could not find field/method name (Jump) in 'C' of 'C.Jump'.
-# End time: 10:43:35 on Aug 06,2024, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runtb_top line 4
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -f compile_verilog"
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qdb".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qpg".
-# Error 31: Unable to unlink file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_0.qtl".
-# Error 133: Unable to remove directory "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:50:17 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work/_lib1_1.qpg" in read mode
-# flat_compact(): DATABASE ERROR: cannot open auxiliary database at path=C:/Users/natha/Documents/Projetos/Projeto-IH/verif/work (auxid=1, gen=1)
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 10:50:17 on Aug 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 10:50:18 on Aug 06,2024, Elapsed time: -2:-42:-2
-# Errors: 2, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:50:19 on Aug 06,2024
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error (suppressible): (vsim-3839) Variable '/tb_top/riscV/dp/WrmuxSrc', driven via a port connection, is multiply driven. See ./../design/Datapath.sv(324).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/Jmux File: ./../design/Datapath.sv Line: 331
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runtb_top PAUSED at line 5
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:52:55 on Aug 06,2024
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 10:52:55 on Aug 06,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:50:19 on Aug 06,2024
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: natha  Hostname: DESKTOP-G5Q8GLO  ProcessID: 17468
-#           Attempting to use alternate WLF file "./wlftqj617i".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqj617i
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-#                   45: Register [ 7] written with value: [00000001] | [         1]
-# 
-#                   55: Register [ 2] written with value: [00000004] | [         4]
+#                  115: Register [ 9] written with value: [000000ff] | [       255]
 # 
 # ** Note: $stop    : ./tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
