@@ -39,11 +39,11 @@ module datamemory #(
         3'b010:  //LW
           rd <= Dataout;
         3'b001:  //LH
-          rd <= {{16{Dataout[15]}}, Dataout[15:0]};
+          rd <= $signed(Dataout[15:0]);
         3'b101:  //LHU
           rd <= {16'b0, Dataout[15:0]};
         3'b000: //LB
-          rd <= {{24{Dataout[7]}}, Dataout[7:0]};
+          rd <= $signed(Dataout[7:0]);
         3'b100: //LBU
           rd <= {24'b0, Dataout[7:0]};
         default: rd <= Dataout;
@@ -59,13 +59,13 @@ module datamemory #(
 
         3'b001: // SH
         begin
-          Wr <= 4'b1100;
-          Datain <= {16'b0, wd[15:0]};
+          Wr <= 4'b0011;
+          Datain[15:0] <= wd;
         end
 
         3'b000: begin  // SB
-          Wr <= 4'b0100;
-          Datain <= {24'b0, wd[7:0]};
+          Wr <= 4'b0001;
+          Datain[7:0] <= wd;
         end
 
         default: begin
