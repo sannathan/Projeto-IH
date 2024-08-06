@@ -19,7 +19,7 @@ module Controller (
     output logic Branch  //0: branch is not taken; 1: branch is taken
 );
 
-  logic [6:0] R_TYPE, B_TYPE, I_TYPE, S_TYPE, JAL, JALR, SHIFT_TYPE; //Adicionar mais vetores
+  logic [6:0] R_TYPE, B_TYPE, I_TYPE, S_TYPE, JAL, JALR, LOAD_TYPE; //Adicionar mais vetores
 
   assign R_TYPE = 7'b0110011;  //add,and, sub, slt, xor, or
   assign B_TYPE = 7'b1100011; //beq, bne, blt, bge
