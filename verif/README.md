@@ -1,4 +1,4 @@
-# 📝 Como Inicializar a Memória de Instruções
+she# 📝 Como Inicializar a Memória de Instruções
 
 1. Crie um arquivo chamado `instructions.txt` no mesmo diretório do script [`assembler.py`](assembler.py).
 

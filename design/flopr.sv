@@ -6,13 +6,14 @@ module flopr #(
     input logic clk,
     reset,
     input logic [WIDTH-1:0] d,
-    input logic stall,
+    input logic stall,PcSel,
     output logic [WIDTH-1:0] q
 );
 
   always_ff @(posedge clk, posedge reset) begin
     if (reset) q <= 0;
-    else if (!stall) q <= d;
+    else if(PcSel) q <=d+4;
+    else if (!stall ) q <= d;
   end
 
 endmodule

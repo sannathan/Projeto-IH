@@ -8,6 +8,7 @@ module ALUController (
 
     //Output
     output logic [3:0] Operation  // operation selection for ALU
+    
 );
 
   assign Operation[0] = 
@@ -36,8 +37,6 @@ module ALUController (
                               ((ALUOp == 2'b10) && (Funct3 == 3'b011)) ||                            // SLTU, SLTIU
                               ((ALUOp == 2'b01) && (Funct3 == 3'b111));                              // BGEU
 
-
-
   assign Operation[2] = 
                               ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)) ||  // SUB
                               ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) ||  // SRL, SRLI
@@ -48,8 +47,6 @@ module ALUController (
                               ((ALUOp == 2'b10) && (Funct3 == 3'b011)) ||                            // SLTU, SLTIU
                               ((ALUOp == 2'b01) && (Funct3 == 3'b111)) ||                            // BGEU
                               (ALUOp == 2'b11);                                                      // LUI
-
-
 
   assign Operation[3] = 
                               ((ALUOp == 2'b01) && (Funct3 == 3'b000)) ||                            // BEQ
@@ -62,4 +59,6 @@ module ALUController (
                               ((ALUOp == 2'b10) && (Funct3 == 3'b011)) ||                            // SLTU, SLTIU
                               ((ALUOp == 2'b01) && (Funct3 == 3'b111)) ||                            // BGEU
                               (ALUOp == 2'b11);                                                      // LUI
+
+ 
 endmodule
