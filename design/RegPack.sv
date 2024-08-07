@@ -13,6 +13,7 @@ package Pipe_Buf_Reg_PKG;
     logic        MemRead;
     logic        MemWrite;
     logic [1:0]  RWseal;
+    logic        Jump;
     logic [1:0]  ALUOp;
     logic        Branch;
     logic [8:0]  Curr_Pc;

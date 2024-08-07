@@ -19,6 +19,7 @@ module Controller (
     output logic MemWrite, //Data memory contents designated by the address input are replaced by the value on the Write data input.
     output logic [1:0] ALUOp,  //00: LW/SW; 01:Branch; 10: Rtype
     output logic Branch,  //0: branch is not taken; 1: branch is taken
+    output logic Jump,
     output logic [1:0]RWseal
 );
 
@@ -41,7 +42,8 @@ module Controller (
   assign MemWrite = (Opcode == S_TYPE);
   assign ALUOp[0] = (Opcode == B_TYPE);
   assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE );
-  assign Branch = (Opcode == B_TYPE || Opcode == JAL);
+  assign Branch = (Opcode == B_TYPE);
+  assign Jump =(Opcode == JAL);
   assign RWseal[0] = (Opcode == JAL);
-  assign RWseal[1] = 0;
+  assign RWseal[1] = (op);
 endmodule

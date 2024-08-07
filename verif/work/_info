@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/User/Desktop/Projeto-IH/verif
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1723056352
+Z2 !s110 1723058810
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1723056352.000000
+Z8 !s108 1723058810.000000
 !s107 ./tb_top.sv|./../design/RISC_V.sv|./../design/Datapath.sv|./../design/instructionmemory.sv|./../design/datamemory.sv|./../design/mux4.sv|./../design/mux2.sv|./../design/imm_Gen.sv|./../design/HazardDetection.sv|./../design/ForwardingUnit.sv|./../design/flopr.sv|./../design/Controller.sv|./../design/BranchUnit.sv|./../design/ALUController.sv|./../design/alu.sv|./../design/RegFile.sv|./../design/RegPack.sv|./../design/Memoria32Data.sv|./../design/Memoria32.sv|./../design/ramOnChipData.v|./../design/ramOnChip32.v|./../design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -86,13 +86,13 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 XSUN5FZ6BTV;79ZEQ7]:`3
+!s100 Q]kPYHnb79AToCH7lEgbH2
 R3
-ISR^afzVDZRM^_7gQdXo3E3
+IGP2Q?Mc<T1WzH^=Z0U:OS0
 R4
 S1
 R0
-w1723004242
+w1723058208
 8./../design/BranchUnit.sv
 F./../design/BranchUnit.sv
 !i122 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 P3Oo?7ezmzjDDfN8]k:M^3
+!s100 m3:Ym8B@?mc:QahiZNo3z0
 R3
-I:QFQYQ=Z9Q9RoCQbU@ZCj3
+IQ>QJD?Y48JdZI0L1ok_YM2
 R4
 S1
 R0
-w1723055682
+w1723058236
 8./../design/Controller.sv
 F./../design/Controller.sv
 !i122 0
-L0 3 45
+L0 3 47
 R7
 r1
 !s85 0
@@ -158,23 +158,23 @@ R9
 R10
 vDatapath
 R1
-Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 ;LHM8O0ADYSoKdbIA35Q=0
-DXx4 work 16 Datapath_sv_unit 0 22 B_=_eBn93RWZman08NTMG2
+Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 gA=MPaXN3mICNNUZzJ`mH1
+DXx4 work 16 Datapath_sv_unit 0 22 L?cz^oJ196liaMNBl>DOK3
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 kh5bf_mlWfTLkR>Rh]o>e1
-ISezbPBW<1cSEFTlaQE5=C1
+!s100 gDSAX3A=l`[T:lJVfM=Ng3
+I`8ISNPSX1TQ2MPT29RnDn3
 !s105 Datapath_sv_unit
 S1
 R0
-Z14 w1723055625
+Z14 w1723058338
 Z15 8./../design/Datapath.sv
 Z16 F./../design/Datapath.sv
 !i122 0
-L0 5 335
+L0 5 339
 R7
 31
 R8
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R13
 R2
-VB_=_eBn93RWZman08NTMG2
+VL?cz^oJ196liaMNBl>DOK3
 r1
 !s85 0
 !i10b 1
-!s100 [zQ;PU8:dQ7GTjM81@UZ[3
-IB_=_eBn93RWZman08NTMG2
+!s100 SB:1_fjJ_UOkk8?G_`LRn0
+IL?cz^oJ196liaMNBl>DOK3
 !i103 1
 S1
 R0
@@ -434,13 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 =9jMQToIoM^>e3DL8HCIT2
+!s100 R9_hYlaf8VkNEIRenZ]@62
 R3
-I;LHM8O0ADYSoKdbIA35Q=0
-V;LHM8O0ADYSoKdbIA35Q=0
+IgA=MPaXN3mICNNUZzJ`mH1
+VgA=MPaXN3mICNNUZzJ`mH1
 S1
 R0
-w1723053204
+w1723058138
 8./../design/RegPack.sv
 F./../design/RegPack.sv
 !i122 0
@@ -530,17 +530,17 @@ vriscv
 R1
 R2
 !i10b 1
-!s100 1]X9Jd`L:CTY5Sn@6F=WA1
+!s100 EH9hDA:53<`AKS>^Lm]@Y1
 R3
-IPgBi3JH7aC]`n1F^k]F;U1
+Ic6bzUe>R34eio`=X0>ae40
 R4
 S1
 R0
-w1723052762
+w1723058354
 8./../design/RISC_V.sv
 F./../design/RISC_V.sv
 !i122 0
-L0 3 74
+L0 3 76
 R7
 r1
 !s85 0

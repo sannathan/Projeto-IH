@@ -19,7 +19,7 @@ module riscv #(
 );
 
   logic [6:0] opcode;
-  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch;
+  logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch,Jump;
   logic [1:0] RWseal;
   logic [1:0] ALUop;
   logic [1:0] ALUop_Reg;
@@ -36,6 +36,7 @@ module riscv #(
       MemWrite,
       ALUop,
       Branch,
+      Jump,
       RWseal
   );
 
@@ -55,6 +56,7 @@ module riscv #(
       MemWrite,
       MemRead,
       Branch,
+      Jump,
       RWseal,
       ALUop,
       Operation,
