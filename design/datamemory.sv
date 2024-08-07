@@ -7,9 +7,13 @@ module datamemory #(
     input logic clk,
     input logic MemRead,  // comes from control unit
     input logic MemWrite,  // Comes from control unit
+
+
     input logic [DM_ADDRESS - 1:0] a,  // Read / Write address - 9 LSB bits of the ALU output
     input logic [DATA_W - 1:0] wd,  // Write Data
     input logic [2:0] Funct3,  // bits 12 to 14 of the instruction
+
+
     output logic [DATA_W - 1:0] rd  // Read Data
 );
 
@@ -24,26 +28,26 @@ module datamemory #(
       .waddress(waddress),
       .Clk(~clk),
       .Datain(Datain),
-      .Dataout(Dataout),
-      .Wr(Wr)
+      .Wr(Wr),
+      .Dataout(Dataout)
   );
 
-  always_comb begin
-    raddress = {{22{1'b0}}, a};
-    waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
+  always_ff @(*) begin
+    raddress = {23'b0, a};
+    waddress = {23'b0, a[8:2], 2'b0};
     Datain = wd;
-    Wr = 4'b0000;
+    Wr <= 4'b0000;
 
     if (MemRead) begin
       case (Funct3)
         3'b010:  //LW
           rd <= Dataout;
         3'b001:  //LH
-          rd <= $signed(Dataout[15:0]);
+          rd <= {Dataout[15] ? 16'hFFFF : 16'b0, Dataout[15:0]};
         3'b101:  //LHU
           rd <= {16'b0, Dataout[15:0]};
         3'b000: //LB
-          rd <= $signed(Dataout[7:0]);
+          rd <= {Dataout[7] ? 24'hFFFFFF : 24'b0, Dataout[7:0]};
         3'b100: //LBU
           rd <= {24'b0, Dataout[7:0]};
         default: rd <= Dataout;
