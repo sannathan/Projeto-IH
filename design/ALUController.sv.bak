@@ -7,7 +7,7 @@ module ALUController (
     input logic [2:0] Funct3,  // bits 12 to 14 of the instruction
 
     //Output
-    output logic [3:0] Operation  // operation selection for ALU
+    output logic [3:0] Operation,  // operation selection for ALU
     
 );
 

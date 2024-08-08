@@ -9,6 +9,6 @@ module mux2 #(
     output logic [WIDTH-1:0] y
 );
 
-  assign y = s ? d1 : d0;
+  assign y = (s) ? d1 : d0;
 
 endmodule

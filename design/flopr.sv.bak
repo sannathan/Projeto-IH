@@ -12,7 +12,7 @@ module flopr #(
 
   always_ff @(posedge clk, posedge reset) begin
     if (reset) q <= 0;
-    else if(PcSel) q <=d+4;
+    else if(PcSel) q <=d-4;
     else if (!stall ) q <= d;
   end
 
