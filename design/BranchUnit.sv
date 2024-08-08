@@ -15,10 +15,10 @@ module BranchUnit #(
 
   logic Branch_Sel;
   logic [31:0] PC_Full;
-
+  logic [31:0] PC_Jalr;
   assign PC_Full = {23'b0, Cur_PC};
-
-  assign PC_Imm = PC_Full + Imm;
+  assign Pc_Jalr=AluResult; 
+  assign PC_Imm = (Branch && Jump) ? Pc_Jalr:PC_Full + Imm;
   assign PC_Four = PC_Full + 32'b100;
   assign Branch_Sel = (Branch && AluResult[0]) || Jump;  // 0:Branch is taken; 1:Branch is not taken
   assign PcSel = Branch_Sel;  // 1:branch is taken; 0:branch is not taken(choose pc+4)

@@ -39,7 +39,7 @@ module alu#(
             4'b1011:  // BGE
                 ALUResult = ($signed(SrcA) >= $signed(SrcB)) ? 1 : 0;
             4'b1100:  // JALR
-                ALUResult = SrcA;
+                ALUResult = $signed(SrcA) + $signed(SrcB);
             4'b1101:  // LUI
                 ALUResult = SrcB;
             4'b1110:  // BLTU, SLTU, SLTIU

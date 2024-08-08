@@ -37,13 +37,13 @@ module Controller (
 
   assign ALUSrc = (Opcode == I_TYPE || Opcode == S_TYPE || Opcode == LOAD_TYPE);
   assign MemtoReg = (Opcode == LOAD_TYPE);
-  assign RegWrite = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == LOAD_TYPE || Opcode == JAL);
+  assign RegWrite = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == LOAD_TYPE || Opcode == JAL|| Opcode == JALR);
   assign MemRead = (Opcode == LOAD_TYPE);
   assign MemWrite = (Opcode == S_TYPE);
-  assign ALUOp[0] = (Opcode == B_TYPE);
-  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE );
-  assign Branch = (Opcode == B_TYPE);
-  assign Jump =(Opcode == JAL);
-  assign RWseal[0] = (Opcode == JAL);
-  assign RWseal[1] = (op);
+  assign ALUOp[0] = (Opcode == B_TYPE || Opcode == JALR);
+  assign ALUOp[1] = (Opcode == R_TYPE || Opcode == I_TYPE || Opcode == JALR);
+  assign Branch = (Opcode == B_TYPE || Opcode ==JALR);
+  assign Jump =(Opcode == JAL||Opcode == JALR);
+  assign RWseal[0] = (Opcode == JAL||Opcode == JALR);
+  assign RWseal[1] = (0);
 endmodule
