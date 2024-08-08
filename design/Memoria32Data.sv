@@ -28,8 +28,8 @@ module Memoria32Data (
     input wire [31:0] waddress,
     input wire Clk,
     input wire [31:0] Datain,
-    output wire [31:0] Dataout,
-    input wire [3:0] Wr
+    input wire [3:0] Wr,
+    output wire [31:0] Dataout
 );
 
   wire [15:0] readUsefullAddress = raddress[15:0];

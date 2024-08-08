@@ -160,7 +160,7 @@ module Datapath #(
       B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end else begin
       B.ALUSrc <= ALUsrc;
-      B.Jump < = Jump;
+      B.Jump <= Jump;
       B.MemtoReg <= MemtoReg;
       B.RegWrite <= RegWrite;
       B.MemRead <= MemRead;
@@ -233,7 +233,7 @@ module Datapath #(
       B.Branch,
       B.Halt,
       B.Jump,
-      B.JumpReg 
+      B.JumpReg,
       ALUResult,
       BrImm,
       Old_PC_Four,
@@ -260,7 +260,7 @@ module Datapath #(
       C.func7 <= 0;
     end else begin
       C.RegWrite <= B.RegWrite;
-      C.Jump <= B.Jump
+      C.Jump <= B.Jump;
       C.MemtoReg <= B.MemtoReg;
       C.MemRead <= B.MemRead;
       C.MemWrite <= B.MemWrite;
@@ -320,6 +320,8 @@ module Datapath #(
     end
   end
 
+  //logic [DATA_W-1:0] Jmux_WrmuxSrc;
+
   //--// The LAST Block
   mux2 #(32) resmux (
       D.Alu_Result,
@@ -328,12 +330,12 @@ module Datapath #(
       WrmuxSrc
   );
 
-   mux2 #(32) Jmux (
+   /*mux2 #(32) Jmux (
     temp,
     D.Pc_Four,
     D.Jump,
-    WrmuxSrc
-  );
+    Jmux_WrmuxSrc
+  );*/
 
   assign WB_Data = WrmuxSrc;
 
